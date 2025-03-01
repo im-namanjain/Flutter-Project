@@ -17,8 +17,8 @@ class _TilesState extends State<Tiles> {
         itemCount: list.student.length,
         itemBuilder: (BuildContext context, index) {
           return ListTile(
-            title: Text('${List.ListName(index)}'),
-            subtitle: Text('${List.ListRollNo(index)}'),
+            title: Text('${list.listName(index)}'),
+            subtitle: Text('${list.listRollNo(index)}'),
           );
         },
       ),

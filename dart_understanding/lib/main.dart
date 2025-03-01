@@ -2,7 +2,12 @@ import 'package:dart_understanding/tiles.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: MyApp()));
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: MyApp()
+    )
+  );
 }
 
 class MyApp extends StatelessWidget {

@@ -1,18 +1,18 @@
 import 'construct.dart';
 
 class ConstList {
-  String name;
-  int rollNo;
+  // String name;
+  // int rollNo;
 
-  ListName(int tileNo) {
+  listName(int tileNo) {
     return student[tileNo].name;
   }
 
-  ListRollNo(int tileNo) {
+  listRollNo(int tileNo) {
     return student[tileNo].rollNo;
   }
 
-  List student = [
+  List<Constructor> student = [
     Constructor("Naman1", 111),
     Constructor("Naman2", 222),
     Constructor("Naman3", 333),
