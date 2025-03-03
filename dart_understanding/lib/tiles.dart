@@ -18,8 +18,8 @@ class _TilesState extends State<Tiles> {
   }
 
   getHttpData() async {
-    http.Response response =
-        await http.get(Uri.parse('https://jsonplaceholder.typicode.com/photos'));
+    http.Response response = await http
+        .get(Uri.parse('https://jsonplaceholder.typicode.com/photos'));
     // print(response.body);
     if (response.statusCode == 200) {
       List<dynamic> jsonResponse = convert.jsonDecode(response.body);
